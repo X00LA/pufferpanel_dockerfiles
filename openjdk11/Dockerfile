@@ -1,5 +1,9 @@
 # Dockerfile for running a Java based Minecraft server using pufferd.
-FROM adoptopenjdk/openjdk11:x86_64-ubi-jre-11.0.10_9
+FROM adoptopenjdk/openjdk11:ubi
+
+RUN mkdir /opt/app
+COPY japp.jar /opt/app
+CMD ["java", "-jar", "/opt/app/japp.jar"]
 
 RUN adduser -D -h /server pufferd
 WORKDIR /server
