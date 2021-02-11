@@ -1,5 +1,5 @@
 # Dockerfile for running a Java based Minecraft server using pufferd.
-FROM openjdk:15-alpine
+FROM openjdk:15
 
 RUN adduser -D -h /server pufferd
 WORKDIR /server
