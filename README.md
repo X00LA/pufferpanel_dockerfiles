@@ -1,3 +1,3 @@
 # Dockerfile for Minecraft
 
-Added Support for OpenJDK-15 for Minecraft Java.
+Added Support for OpenJDK-11 and 15 for Minecraft Java.
